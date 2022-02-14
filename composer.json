@@ -18,7 +18,11 @@
         }
     },
     "scripts": {
-		"cs": "vendor/bin/php-cs-fixer fix --dry-run --diff",
-		"fix": "vendor/bin/php-cs-fixer fix"
+		"fix": "php-cs-fixer fix",
+		"cs": "@fix --dry-run --diff"
+    },
+    "scripts-descriptions": {
+        "fix": "Fix code style",
+		"cs": "Dry run CS fixer"
     }
 }
