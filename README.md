@@ -47,4 +47,4 @@ Define these scripts in your `composer.json`:
 }
 ```
 
-and you'll have 
+and you'll have `composer cs` and `composer fix` commands.
