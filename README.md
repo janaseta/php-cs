@@ -17,7 +17,7 @@ directories where you need it:
 <?php
 
 return JanaSeta\PhpCs\Fix::in([
-	// 
+	// List directories where your PHP is
     'src',
 ]);
 ```
