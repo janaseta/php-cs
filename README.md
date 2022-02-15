@@ -36,6 +36,26 @@ Fix the code style:
 vendor/bin/php-cs-fixer fix
 ```
 
+## Customization
+
+If you need to specify some details on the `PhpCsFixer` instance or a custom
+`Finder`, you can use this package in the following way:
+
+```php
+/* .php-cs-fixer.dist */
+<?php
+
+// Create a Finder instance
+$finder = PhpCsFixer\Finder::create()
+	->in($folders); // Search however you need
+
+$config = new JanaSeta\PhpCs\Config;
+
+return $config
+	->setIndent('    ') // Set any php-cs-fixer options that you desire
+	->setFinder($finder);
+```
+
 ## Tips
 
 Define these scripts in your `composer.json`:
