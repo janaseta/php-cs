@@ -11,6 +11,7 @@ class Config extends \PhpCsFixer\Config
 		'braces' => false,
 		'new_with_braces' => false,
 		'indentation_type' => true,
+		'is_null' => false,
 	];
 
 	protected $indent = "\t";
