@@ -5,8 +5,25 @@ namespace JanaSeta\PhpCs;
 class Config extends \PhpCsFixer\Config
 {
 	protected array $rules = [
+		// Pre-made rulesets
 		'@Symfony:risky' => true,
-		'ternary_to_null_coalescing' => true,
+		'@PHP80Migration' => true,
+		'@PHP80Migration:risky' => true,
+
+		// Overrides `@PHP80Migration`
+		'assign_null_coalescing_to_coalesce_equal' => false,
+		'heredoc_indentation' => false,
+
+		// Overrides `@PHP80Migration:risky`
+		'get_class_to_class_keyword' => false,
+		'modernize_strpos' => false,
+		'use_arrow_functions' => false,
+		'declare_strict_types' => false,
+
+		// Overrides `PHP80Migration:risky` and `@Symfony:risky`
+		'no_php4_constructor' => false,
+
+		// Our custom rules
 		'phpdoc_align' => false,
 		'braces' => false,
 		'new_with_braces' => false,
