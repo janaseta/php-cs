@@ -28,4 +28,14 @@ class Config extends \PhpCsFixer\Config
 			->setLineEnding($this->lineEnding)
 			->setRules($this->rules);
 	}
+
+	public function addRules(array $rules): static
+	{
+		$this->setRules([
+			...$this->rules,
+			...$rules,
+		]);
+
+		return $this;
+	}
 }

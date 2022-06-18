@@ -38,6 +38,21 @@ vendor/bin/php-cs-fixer fix
 
 ## Customization
 
+To add or override some rules or rulesets use the `addRules` method:
+
+```php
+/* .php-cs-fixer.dist */
+<?php
+
+return JanaSeta\PhpCs\Fix::in([
+	'src',
+	'tests',
+])->addRules([
+	'braces' => true,
+	'is_null' => false,
+]);
+```
+
 If you need to specify some details on the `PhpCsFixer` instance or a custom
 `Finder`, you can use this package in the following way:
 
