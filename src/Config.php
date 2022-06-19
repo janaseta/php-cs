@@ -19,6 +19,10 @@ class Config extends \PhpCsFixer\Config
 		'modernize_strpos' => false,
 		'use_arrow_functions' => false,
 		'declare_strict_types' => false,
+		'method_argument_space' => [
+			'after_heredoc' => true,
+			'on_multiline' => 'ignore',
+		],
 
 		// Overrides `PHP80Migration:risky` and `@Symfony:risky`
 		'no_php4_constructor' => false,
