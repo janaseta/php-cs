@@ -23,6 +23,7 @@ class Config extends \PhpCsFixer\Config
 			'after_heredoc' => true,
 			'on_multiline' => 'ignore',
 		],
+		'void_return' => false,
 
 		// Overrides `PHP80Migration:risky` and `@Symfony:risky`
 		'no_php4_constructor' => false,
