@@ -7,10 +7,10 @@ class Config extends \PhpCsFixer\Config
 	protected array $rules = [
 		// Pre-made rulesets
 		'@Symfony:risky' => true,
-		'@PHP80Migration' => true,
+		'@PHP82Migration' => true,
 		'@PHP80Migration:risky' => true,
 
-		// Overrides `@PHP80Migration`
+		// Overrides `@PHP82Migration`
 		'assign_null_coalescing_to_coalesce_equal' => false,
 		'heredoc_indentation' => false,
 
